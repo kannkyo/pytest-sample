@@ -8,15 +8,13 @@ pipeline {
   stages {
     stage('install') {
       steps {
-        sh '''ls -al
-# pip install -r requirements.txt'''
+        sh 'ls -al'
       }
     }
 
     stage('test') {
       steps {
-        sh '''ls -al
-# python -m pytest tests --cov-report=term --cov=tests/'''
+        sh 'ls -al'
       }
     }
 
